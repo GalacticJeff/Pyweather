@@ -11,9 +11,9 @@ def time_converter(time):
 
 
 def url_builder(city_id):
-    user_api = '4fe632120355ff201ecd605409488b9f'  # Obtain yours form: http://openweathermap.org/
-    unit = 'metric'  # For Fahrenheit use imperial, for Celsius use metric, and the default is Kelvin.
-    api = 'http://api.openweathermap.org/data/2.5/weather?id='     # Search for your city ID here: http://bulk.openweathermap.org/sample/city.list.json.gz
+    user_api = ''  # Crear cuenta en: http://openweathermap.org/
+    unit = 'metric'
+    api = 'http://api.openweathermap.org/data/2.5/weather?id='
 
     full_api_url = api + str(city_id) + '&mode=json&units=' + unit + '&APPID=' + user_api
     return full_api_url
